@@ -1,0 +1,11 @@
+#!/bin/dash
+
+curl https://loripsum.net/api/5/short/plaintext -o myFile
+
+[ -f yourFile ] && rm yourFile
+
+plantuml pipesDiagram.plantuml
+plantuml stdioDiagram.plantuml
+plantuml APIcalls.plantuml
+
+clear

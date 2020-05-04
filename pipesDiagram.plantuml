@@ -1,0 +1,18 @@
+@startuml
+
+agent curl
+agent process [
+    demo2.py
+]
+
+agent sort
+
+queue pipe1
+queue pipe2
+
+curl ==> pipe1
+pipe1 ==> process
+process ==> pipe2
+pipe2 ==> sort
+
+@enduml

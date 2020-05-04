@@ -1,0 +1,26 @@
+@startuml
+
+file stdin[
+    Standard Input
+    <b><i>stdin</i></b>
+]
+
+file stdout[
+    Standard Output
+    <b><i>stdout</i></b>
+]
+
+file stderr [
+    Standard Error
+    <b><i>stderr</i></b>
+]
+
+agent program
+
+stdin ==> program
+
+program ==> stdout
+
+program .> stderr
+
+@enduml

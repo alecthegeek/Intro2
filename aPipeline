@@ -1,0 +1,7 @@
+#!/bin/dash
+
+# With stdio we can use pipes to connect programs in a chain
+
+set -v
+
+curl -s https://loripsum.net/api/5/short/plaintext | ./reverseTextLines2.py | sort

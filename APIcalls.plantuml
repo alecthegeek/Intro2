@@ -1,0 +1,17 @@
+@startuml
+
+agent client [
+    Someone
+    else's Code
+]
+
+agent YourCode [
+    Your Code
+]
+
+client ==> YourCode : request\nvia stdin
+
+client <== YourCode : response\n via stdout
+
+
+@enduml
