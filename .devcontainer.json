@@ -1,3 +1,4 @@
 {
-  "image": "python:slim-buster"
+  "image": "python:slim-buster",
+  "containerUser": "1000"
 }
