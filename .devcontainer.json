@@ -1,0 +1,4 @@
+{
+  "image": "python:slim-buster",
+  "containerUser": "vsonline"
+}
