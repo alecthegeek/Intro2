@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 from subprocess import run as run_process
 from requests import get
@@ -31,7 +31,7 @@ def processText(text):
     return resp.stdout.decode("utf-8")
 
 @route('/')
-def swapText(method="GET"):
+def index( method="GET"):
 
     if request.query.transformcontent == "transformcontent":
         swapText.displayText = processText(swapText.displayText)

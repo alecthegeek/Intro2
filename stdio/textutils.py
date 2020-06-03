@@ -20,6 +20,7 @@ def revLine(line):
     
     >>> revLine("hello")
     'hello'
+    
     >>> revLine("")
     ''
     
@@ -28,6 +29,29 @@ def revLine(line):
     revWords = reversed(words)
     newLine = ' '.join(revWords)
     return newLine
+
+def count(line, item="w"):
+    """Count things in a line of text
+
+    defaults to words, can also count chars
+    
+    >>> count("hello")
+    1
+
+    >>> count("hello", "l")
+    5
+
+    >>> count("hello world", "w")
+    2
+
+    >>> count("hello world", "l")
+    10
+    """
+
+    if item == "w":
+        return len(line.strip().split(" "))
+    else:
+        return len(line.strip().replace(" ",""))
 
 if __name__ == "__main__":
     import doctest
