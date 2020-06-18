@@ -33,7 +33,6 @@ def processText(text):
 @route('/')
 def index( method="GET"):
 
-
     global displayText
 
     if request.query.transformcontent == "transformcontent":
